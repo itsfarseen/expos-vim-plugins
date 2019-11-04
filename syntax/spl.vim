@@ -76,13 +76,13 @@ highlight def xBackup guifg=#ff4444
 highlight def xRestore guifg=#44ff44
 highlight xInvalid guibg=#ff4444 guifg=#333333
 
-execute 'match xInvalid /\v'.InvalidPattern("PROCESS_TABLE", "16").'/'
-execute 'match xInvalid /\v'.InvalidPattern("PAGE_TABLE_BASE", "20").'/'
-execute 'match xInvalid /\v'.InvalidPattern("OPEN_FILE_TABLE", "4").'/'
-execute 'match xInvalid /\v'.InvalidPattern("SEMAPHORE_TABLE", "4").'/'
-execute 'match xInvalid /\v'.InvalidPattern("FILE_STATUS_TABLE", "4").'/'
-execute 'match xInvalid /\v'.InvalidPattern("BUFFER_TABLE", "4").'/'
-execute 'match xInvalid /\v'.InvalidPattern("INODE_TABLE", "16").'/'
-execute 'match xInvalid /\v'.InvalidPattern("ROOT_FILE", "8").'/'
-execute 'match xInvalid /\v'.InvalidPattern("USER_TABLE", "2").'/'
-execute 'match xInvalid /\v'.InvalidPattern("PTBR", "2").'/'
+call matchadd('xInvalid', '\v'.InvalidPattern("PROCESS_TABLE", "16"))
+call matchadd('xInvalid', '\v'.InvalidPattern("PAGE_TABLE_BASE", "20"))
+call matchadd('xInvalid', '\v'.InvalidPattern("OPEN_FILE_TABLE", "4"))
+call matchadd('xInvalid', '\v'.InvalidPattern("SEMAPHORE_TABLE", "4"))
+call matchadd('xInvalid', '\v'.InvalidPattern("FILE_STATUS_TABLE", "4"))
+call matchadd('xInvalid', '\v'.InvalidPattern("BUFFER_TABLE", "4"))
+call matchadd('xInvalid', '\v'.InvalidPattern("INODE_TABLE", "16"))
+call matchadd('xInvalid', '\v'.InvalidPattern("ROOT_FILE", "8"))
+call matchadd('xInvalid', '\v'.InvalidPattern("USER_TABLE", "2"))
+call matchadd('xInvalid', '\v'.InvalidPattern("PTBR", "2"))
