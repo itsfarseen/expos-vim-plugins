@@ -10,7 +10,7 @@ syntax keyword xBackup  backup multipush
 syntax keyword xRestore restore multipop
 syntax keyword xPrint   print
 syntax keyword xBreakpoint breakpoint
-syntax keyword xReg     R0 R1 R2 R3 R4 R5 R6 R7 R8 R9 R10 R11 R12 R13 R14 R15
+syntax keyword xReg     R0 R1 R2 R3 R4 R5 R6 R7 R8 R9 R10 R11 R12 R13 R14 R15 SP IP EIP EC EPN EMA PTBR PTLR P0 P1 P2 P3
 syntax keyword Constant EX_HANDLER TIMER DISK CONSOLE
 syntax keyword Constant INT_4 INT_5 INT_6 INT_7 INT_8 INT_9 INT_10
 syntax keyword Constant INT_11 INT_12 INT_13 INT_14 INT_15 INT_16 INT_17 INT_18
