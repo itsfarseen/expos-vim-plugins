@@ -5,7 +5,7 @@ syntax match Comment /\/\/.*/
 syntax match xUnalias /^.*__unalias__.*$/
 syntax match String /".*"/
 syntax match Label /[a-zA-Z_][a-zA-Z_0-9]*:/
-syntax keyword xBuiltin restore call alias return
+syntax keyword xBuiltin restore call alias return ireturn
 syntax keyword xBackup  backup multipush
 syntax keyword xRestore restore multipop
 syntax keyword xPrint   print
