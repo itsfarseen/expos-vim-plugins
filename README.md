@@ -25,4 +25,4 @@
   multipush without multipop or vice versa
 
 ### Screenshot
-[Screenshot](screenshot.png)
+![Screenshot](screenshot.png)
