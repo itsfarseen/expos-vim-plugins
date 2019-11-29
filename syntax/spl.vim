@@ -62,7 +62,7 @@ syntax keyword Constant IDLE_PROCESS INIT_PROCESS LOGIN_PROCESS SHELL_PROCESS SW
 syntax keyword Constant ZERO ONE
 
 function InvalidPattern(tableConstant, entrySize)
-    return a:tableConstant . '\s*\+\s*[^*\]]+\*(\s*'.a:entrySize.'([^0-9]|$))@![^\]=;]*'
+    return a:tableConstant . '\s*\+\s*[^*]+\*(\s*'.a:entrySize.'([^0-9]|$))@![^\]=;]*'
 endfunction
 
 let b:current_syntax = "spl"
