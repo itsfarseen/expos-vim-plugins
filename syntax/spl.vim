@@ -1,3 +1,4 @@
+setlocal commentstring=//%s
 syntax keyword Conditional if then else endif while do endwhile break continue
 syntax match Operator /[=+\-*\/%!]/
 syntax match xOperatorDeref /[\[\]]/
