@@ -3,16 +3,16 @@
 ### Installation
 * Vim Plug
     ```
-        Plug 'happycoder97/expos-vim-plugins'
+        Plug 'itsfarseen/expos-vim-plugins'
     ```
 * Vundle
     ```
-        Plugin 'happycoder97/expos-vim-plugins'
+        Plugin 'itsfarseen/expos-vim-plugins'
     ```
 * Pathogen
     ```
         cd ~/.vim/bundle # or whichever directory you configured for pathogen
-        git clone https://github.com/happycoder97/expos-vim-plugins.git
+        git clone https://github.com/itsfarseen/expos-vim-plugins.git
     ```
 
 
