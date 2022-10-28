@@ -4,7 +4,7 @@ syntax match Operator /[=+\-*\/%!]/
 syntax match xOperatorDeref /[\[\]]/
 syntax match Comment /\/\/.*/
 syntax match xUnalias /^.*__unalias__.*$/
-syntax match String /".*"/
+syn region	xString		start=+\%(L\|u\|u8\|U\|R\|LR\|u8R\|uR\|UR\)\="+ skip=+\\\\\|\\"+ end=+"+ 
 syntax match Label /[a-zA-Z_][a-zA-Z_0-9]*:/
 syntax keyword xBuiltin restore call alias return ireturn
 syntax keyword xBackup  backup multipush
@@ -67,6 +67,7 @@ function InvalidPattern(tableConstant, entrySize)
 endfunction
 
 let b:current_syntax = "spl"
+highlight def xString ctermfg=Red guifg=#ff5555
 highlight def xOperatorDeref ctermfg=Red guifg=#ff5555
 highlight def xBuiltin ctermfg=Blue guifg=#7777ff
 highlight def xReg ctermfg=Green guifg=#66AA66
